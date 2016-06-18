@@ -1,0 +1,49 @@
+<html lang= "en" ng-app="contactManagerApp">
+    <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="description" content="">
+            <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+            <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic"/>
+            <link rel="stylesheet" href="./bower_components/angular-material/angular-material.css"/>
+            <link rel="stylesheet" href="./bower_components/angular-material-icons/angular-material-icons.css"/>
+            
+            <link rel="stylesheet" href="./assets/app.css"/>
+    </head>
+
+    <body layout="row" data-ng-controller="mainController as vm">
+       <div data-ng-include="'dist/views/sidenav.html'" layout="vertical"></div>
+       
+
+        <div layout="column" flex>
+            <div data-ng-include="'dist/views/toolbar-header.html'" layout="vertical"></div>
+            <md-content flex id="content">
+                <div ng-include="'dist/views/main-content.html'"></div>
+                <md-tabs md-stretch-tabs="always" md-dynamic-height=""    md-selected="vm.tabIndex">
+                    <md-tab label="Bio">
+                        <div ng-include="'dist/views/tab-bio.html'"></div>
+                    </md-tab>
+                    <md-tab label="Notes">
+                        <div ng-include="'dist/views/tab-notes.html'"></div>
+                    </md-tab>
+                </md-tabs>
+            </md-content>
+        </div>
+        <script src="./bower_components/angular/angular.min.js"></script>
+        <script src="./bower_components/angular-animate/angular-animate.min.js"></script>
+        <script src="./bower_components/angular-aria/angular-aria.min.js"></script>
+        <script src="./bower_components/angular-material/angular-material.min.js"></script>
+        <script src="./bower_components/angular-material-icons/angular-material-icons.min.js"></script>
+        <script src="./dist/model.js"></script>
+        
+        <script src="./dist/services/user.service.js"></script>
+        
+        <script src="./dist/controllers/main.controller.js"></script>
+        <script src="./dist/controllers/adduser.controller.js"></script>
+        
+        <script src="./dist/boot.js"></script>
+        
+    </body>
+
+
+</html>
