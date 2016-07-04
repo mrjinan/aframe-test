@@ -20,6 +20,36 @@ var ContactManagerApp;
                     name: 'Calvin',
                     avatar: 'svg-3',
                     bio: "My some bio for C"
+                },
+                {
+                    name: 'Anisha',
+                    avatar: 'svg-1',
+                    bio: "My some bio for A"
+                },
+                {
+                    name: 'Jinan',
+                    avatar: 'svg-2',
+                    bio: "My some bio for B"
+                },
+                {
+                    name: 'Calvin',
+                    avatar: 'svg-3',
+                    bio: "My some bio for C"
+                },
+                {
+                    name: 'Anisha',
+                    avatar: 'svg-1',
+                    bio: "My some bio for A"
+                },
+                {
+                    name: 'Jinan',
+                    avatar: 'svg-2',
+                    bio: "My some bio for B"
+                },
+                {
+                    name: 'Calvin',
+                    avatar: 'svg-3',
+                    bio: "My some bio for C"
                 }
             ];
         }

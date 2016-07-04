@@ -17,6 +17,8 @@
   ],
   "dependencies": {
     "angular-material": "^1.0.9",
-    "angular-material-icons": "^0.7.0"
+    "angular-material-icons": "^0.7.0",
+    "aframe": "^0.2.0",
+    "d3": "^4.1.0"
   }
 }

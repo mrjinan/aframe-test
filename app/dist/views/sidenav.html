@@ -23,8 +23,6 @@
                 </md-item-template>
             </md-autocomplete>
         </div>
-
-
             <md-list>
                 <md-list-item ng-repeat="user in vm.users| filter: vm.searchText | orderBy:'name'">
                     <md-button ng-click="vm.selectUser(user)" ng-class="{'selected':user == vm.selectedUser}">
@@ -35,6 +33,6 @@
             </md-list>
         </md-content>
         <md-button class="md-fab md-fab-bottom-right" data-ng-click="vm.addUser($event)">
-            <ng-md-icon icon="add"></ng-md-icon>
+            <ng-md-icon data-ng-click="vm.addUser($event)" icon="add"></ng-md-icon>
         </md-button>
  </md-sidenav>
